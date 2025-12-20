@@ -1,0 +1,203 @@
+import { Track } from '@/types';
+
+// Audio files should be uploaded to Supabase Storage bucket "audio-tracks"
+// The URL format is: https://jurdpcjqqmfszimptiwo.databasepad.com/storage/v1/object/public/audio-tracks/FILENAME.mp3
+const STORAGE_BASE_URL = 'https://jurdpcjqqmfszimptiwo.databasepad.com/storage/v1/object/public/audio-tracks';
+
+export const initialTracks: Track[] = [
+  {
+    id: 1,
+    title: "Lu.phoria",
+    duration: "3:42",
+    isBonus: false,
+    edition: "Euphoric Edition",
+    emotionalTag: "Transcendent Joy",
+    votes: 0,
+    favorites: 0,
+    comments: [],
+    coverImage: "https://d64gsuwffb70l.cloudfront.net/69332beeb9fbd2f10b81258a_1764961571825_b67afffe.jpeg",
+    audioUrl: `${STORAGE_BASE_URL}/lu-phoria.mp3`
+  },
+  {
+    id: 2,
+    title: "E.LU.minate",
+    duration: "4:15",
+    isBonus: false,
+    edition: "Radiant Edition",
+    emotionalTag: "Inner Light",
+    votes: 0,
+    favorites: 0,
+    comments: [],
+    coverImage: "https://d64gsuwffb70l.cloudfront.net/69332beeb9fbd2f10b81258a_1764961580818_c46aa2b8.jpeg",
+    audioUrl: `${STORAGE_BASE_URL}/e-lu-minate.mp3`
+  },
+  {
+    id: 3,
+    title: "Lu.niverse",
+    duration: "5:01",
+    isBonus: false,
+    edition: "Cosmic Edition",
+    emotionalTag: "Infinite Wonder",
+    votes: 0,
+    favorites: 0,
+    comments: [],
+    coverImage: "https://d64gsuwffb70l.cloudfront.net/69332beeb9fbd2f10b81258a_1764961582039_a48b0bf3.jpeg",
+    audioUrl: `${STORAGE_BASE_URL}/lu-niverse.mp3`
+  },
+  {
+    id: 4,
+    title: "VoLUmentality",
+    duration: "3:58",
+    isBonus: false,
+    edition: "Mindscape Edition",
+    emotionalTag: "Deep Reflection",
+    votes: 0,
+    favorites: 0,
+    comments: [],
+    coverImage: "https://d64gsuwffb70l.cloudfront.net/69332beeb9fbd2f10b81258a_1764961583126_df60f462.jpeg",
+    audioUrl: `${STORAGE_BASE_URL}/volumentality.mp3`
+  },
+  {
+    id: 5,
+    title: "Lu.minal",
+    duration: "4:33",
+    isBonus: false,
+    edition: "Threshold Edition",
+    emotionalTag: "Awakening",
+    votes: 0,
+    favorites: 0,
+    comments: [],
+    coverImage: "https://d64gsuwffb70l.cloudfront.net/69332beeb9fbd2f10b81258a_1764961584048_add42aeb.jpeg",
+    audioUrl: `${STORAGE_BASE_URL}/lu-minal.mp3`
+  },
+  {
+    id: 6,
+    title: "Lu.Go.Rhythm",
+    duration: "3:27",
+    isBonus: false,
+    edition: "Pulse Edition",
+    emotionalTag: "Heartbeat",
+    votes: 0,
+    favorites: 0,
+    comments: [],
+    coverImage: "https://d64gsuwffb70l.cloudfront.net/69332beeb9fbd2f10b81258a_1764961584894_55579398.jpeg",
+    audioUrl: `${STORAGE_BASE_URL}/lu-go-rhythm.mp3`
+  },
+  {
+    id: 7,
+    title: "IL.LU.sion",
+    duration: "4:48",
+    isBonus: false,
+    edition: "Mirage Edition",
+    emotionalTag: "Dreamstate",
+    votes: 0,
+    favorites: 0,
+    comments: [],
+    coverImage: "https://d64gsuwffb70l.cloudfront.net/69332beeb9fbd2f10b81258a_1764961585658_f1347d7a.jpeg",
+    audioUrl: `${STORAGE_BASE_URL}/il-lu-sion.mp3`
+  },
+  {
+    id: 8,
+    title: "AbsoLUt",
+    duration: "3:55",
+    isBonus: false,
+    edition: "Pure Edition",
+    emotionalTag: "Raw Truth",
+    votes: 0,
+    favorites: 0,
+    comments: [],
+    coverImage: "https://d64gsuwffb70l.cloudfront.net/69332beeb9fbd2f10b81258a_1764961586275_45eca63d.jpeg",
+    audioUrl: `${STORAGE_BASE_URL}/absolut.mp3`
+  },
+  {
+    id: 9,
+    title: "ResoLUtion",
+    duration: "4:22",
+    isBonus: false,
+    edition: "Clarity Edition",
+    emotionalTag: "Transformation",
+    votes: 0,
+    favorites: 0,
+    comments: [],
+    coverImage: "https://d64gsuwffb70l.cloudfront.net/69332beeb9fbd2f10b81258a_1764961571825_b67afffe.jpeg",
+    audioUrl: `${STORAGE_BASE_URL}/resolution.mp3`
+  },
+  {
+    id: 10,
+    title: "LUminescence",
+    duration: "5:12",
+    isBonus: false,
+    edition: "Glow Edition",
+    emotionalTag: "Ethereal Beauty",
+    votes: 0,
+    favorites: 0,
+    comments: [],
+    coverImage: "https://d64gsuwffb70l.cloudfront.net/69332beeb9fbd2f10b81258a_1764961580818_c46aa2b8.jpeg",
+    audioUrl: `${STORAGE_BASE_URL}/luminescence.mp3`
+  },
+  {
+    id: 11,
+    title: "OverLUad",
+    duration: "3:18",
+    isBonus: false,
+    edition: "Intensity Edition",
+    emotionalTag: "Power Surge",
+    votes: 0,
+    favorites: 0,
+    comments: [],
+    coverImage: "https://d64gsuwffb70l.cloudfront.net/69332beeb9fbd2f10b81258a_1764961582039_a48b0bf3.jpeg",
+    audioUrl: `${STORAGE_BASE_URL}/overluad.mp3`
+  },
+  {
+    id: 12,
+    title: "LUminate My Bones",
+    duration: "4:45",
+    isBonus: false,
+    edition: "Visceral Edition",
+    emotionalTag: "Soul Deep",
+    votes: 0,
+    favorites: 0,
+    comments: [],
+    coverImage: "https://d64gsuwffb70l.cloudfront.net/69332beeb9fbd2f10b81258a_1764961583126_df60f462.jpeg",
+    audioUrl: `${STORAGE_BASE_URL}/luminate-my-bones.mp3`
+  },
+  {
+    id: 13,
+    title: "LUx Echo",
+    duration: "4:08",
+    isBonus: false,
+    edition: "Resonance Edition",
+    emotionalTag: "Reverberating Light",
+    votes: 0,
+    favorites: 0,
+    comments: [],
+    coverImage: "https://d64gsuwffb70l.cloudfront.net/69332beeb9fbd2f10b81258a_1764961584048_add42aeb.jpeg",
+    audioUrl: `${STORAGE_BASE_URL}/lux-echo.mp3`
+  },
+  {
+    id: 14,
+    title: "Deja-Lu",
+    duration: "2:15",
+    isBonus: true,
+    edition: "Memory Edition",
+    emotionalTag: "Nostalgic Echoes",
+    votes: 0,
+    favorites: 0,
+    comments: [],
+    coverImage: "https://d64gsuwffb70l.cloudfront.net/69332beeb9fbd2f10b81258a_1764961584894_55579398.jpeg",
+    audioUrl: `${STORAGE_BASE_URL}/deja-lu.mp3`
+  },
+  {
+    id: 15,
+    title: "Lu.na Pulse",
+    duration: "2:33",
+    isBonus: true,
+    edition: "Lunar Edition",
+    emotionalTag: "Midnight Serenity",
+    votes: 0,
+    favorites: 0,
+    comments: [],
+    coverImage: "https://d64gsuwffb70l.cloudfront.net/69332beeb9fbd2f10b81258a_1764961585658_f1347d7a.jpeg",
+    audioUrl: `${STORAGE_BASE_URL}/lu-na-pulse.mp3`
+  }
+];
